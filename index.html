@@ -11,12 +11,12 @@
 			text-align: center;
 			margin-top: 0;
 			margin-bottom: 20px;
-			font-size: 100px;
+			font-size: 150px;
 			font-family: GothamPro;
 		}
 		
 		#sheild {
-			border-top: 700px solid rgb(228, 77, 38);
+			border-top: 620px solid rgb(228, 77, 38);
 			border-left: 45px solid transparent;
 			border-right: 45px solid transparent;
 			height: 0;
@@ -38,10 +38,10 @@
 		#sheild-cover {
 			background: rgb(239, 102, 53);
 			width: 200px;
-			height: 605px;
+			height: 530px;
 			position: absolute;
 			right: 50px;
-			top: -650px;
+			top: -570px;
 		}
 		
 		#sheild-cover::before {
@@ -49,7 +49,7 @@
 			background: rgb(239, 102, 53);
 			position: absolute;
 			width: 100px;
-			height: 605px;
+			height: 530px;
 			transform: skew(-4deg);
 			right: -22px;
 		}
@@ -64,6 +64,116 @@
 			border-bottom: 40px solid transparent;
 		}
 		
+		#sheild-text {
+			position: absolute;
+			width: 400px;
+			height: 500px;
+			z-index: 2;
+			top: -575px;
+			left: 50px;
+			color: white;
+		}
+		
+		#top-left {
+			border-top: 75px solid rgb(235, 235, 235);
+			border-left: 5px solid transparent;
+			height: 0;
+			width: 200px;
+			position: absolute;
+			top: 60px;
+			left: 0;
+		}
+		
+		#top-right {
+			border-top: 75px solid white;
+			border-right: 5px solid transparent;
+			height: 0;
+			width: 195px;
+			position: absolute;
+			top: 60px;
+			right: 0;
+		}
+		
+		#mid-left1 {
+			width: 75px;
+			height: 230px;
+			transform: skew(5deg);
+			background: rgb(235, 235, 235);
+			position: absolute;
+			top: 60px;
+		}
+		
+		#mid-left2 {
+			border-top: 75px solid rgb(235, 235, 235);
+			border-left: 5px solid transparent;
+			height: 0;
+			width: 185px;
+			position: absolute;
+			top: 215px;
+			left: 10px;
+		}
+		
+		#mid-right1 {
+			border-top: 75px solid white;
+			border-right: 5px solid transparent;
+			height: 0;
+			width: 175px;
+			position: absolute;
+			top: 215px;
+			right: 20px;
+		}
+		
+		#mid-right2 {
+			width: 75px;
+			height: 240px;
+			transform: skew(-5deg);
+			background: white;
+			position: absolute;
+			top: 215px;
+			right: 20px;
+		}
+		
+		#bottom-right1 {
+			height: 74px;
+			width: 174px;
+			position: absolute;
+			top: 425px;
+			right: 26px;
+			background: white;
+			transform: rotate(-13deg) skew(-16deg);
+		}
+		
+		#bottom-left1 {
+			height: 75px;
+			width: 180px;
+			position: absolute;
+			top: 425px;
+			left: 26px;
+			background: rgb(235, 235, 235);
+			transform: rotate(13deg) skew(16deg);
+			border-bottom-right-radius: 8px;
+		}
+		
+		#bottom-left2 {
+			width: 75px;
+			height: 130px;
+			transform: skew(5deg);
+			background: rgb(235, 235, 235);
+			position: absolute;
+			top: 350px;
+			left: 27px;
+		}
+		
+		#bottom-right2 {
+			height: 10px;
+			width: 76px;
+			position: absolute;
+			top: 476px;
+			right: 156px;
+			background: white;
+			transform: rotate(90deg) skew(12deg);
+		}
+		
 	</style>
 </head>
 <body>
@@ -71,7 +181,18 @@
 		<h1>HTML</h1>
 		<div id="sheild">
 			<div id="sheild-cover"></div>
-			<div id="sheild-text"></div>
+			<div id="sheild-text">
+				<div id="top-left"></div>
+				<div id="top-right"></div>
+				<div id="mid-left1"></div>
+				<div id="mid-left2"></div>
+				<div id="mid-right1"></div>
+				<div id="mid-right2"></div>
+				<div id="bottom-right1"></div>
+				<div id="bottom-left1"></div>
+				<div id="bottom-left2"></div>
+				<div id="bottom-right2"></div>
+			</div>
 		</div>
 	</div>
 </body>
