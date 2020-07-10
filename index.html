@@ -1,0 +1,78 @@
+<html>
+<head>
+	<link href="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css" rel="stylesheet" type="text/css">
+	<style>
+		
+		#html {
+			width: 590px;
+		}
+		
+		h1 {
+			text-align: center;
+			margin-top: 0;
+			margin-bottom: 20px;
+			font-size: 100px;
+			font-family: GothamPro;
+		}
+		
+		#sheild {
+			border-top: 700px solid rgb(228, 77, 38);
+			border-left: 45px solid transparent;
+			border-right: 45px solid transparent;
+			height: 0;
+			width: 500px;
+			position: relative;
+		}
+		
+		#sheild::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			width: 0;
+			height: 0;
+			border-left: 250px solid transparent;
+			border-right: 250px solid transparent;
+			border-top: 50px solid rgb(228, 77, 38);
+		}
+		
+		#sheild-cover {
+			background: rgb(239, 102, 53);
+			width: 200px;
+			height: 605px;
+			position: absolute;
+			right: 50px;
+			top: -650px;
+		}
+		
+		#sheild-cover::before {
+			content: '';
+			background: rgb(239, 102, 53);
+			position: absolute;
+			width: 100px;
+			height: 605px;
+			transform: skew(-4deg);
+			right: -22px;
+		}
+		
+		#sheild-cover::after {
+			content: '';
+			position: absolute;
+			bottom: -40px;
+			width: 0;
+			height: 0;
+			border-left: 200px solid rgb(239, 102, 53);
+			border-bottom: 40px solid transparent;
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="html">
+		<h1>HTML</h1>
+		<div id="sheild">
+			<div id="sheild-cover"></div>
+			<div id="sheild-text"></div>
+		</div>
+	</div>
+</body>
+</html>
